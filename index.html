@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M. Nagelbeauty – Nagelstudio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-rose-50 text-slate-800">
+
+  <!-- HEADER -->
+<header class="bg-white/70 backdrop-blur-md shadow-sm fixed top-0 left-0 w-full z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- Logo -->
+    <img src="images/logo.png" alt="Logo" class="h-16 md:h-20">
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex gap-8 text-slate-700">
+      <a href="#leistungen" class="hover:text-rose-600 transition">Leistungen</a>
+      <a href="#galerie" class="hover:text-rose-600 transition">Galerie</a>
+      <a href="#kontakt" class="hover:text-rose-600 transition">Kontakt</a>
+    </nav>
+
+    <!-- Mobile Button -->
+    <button id="menuBtn" class="md:hidden text-3xl text-rose-700">
+      ☰
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden flex-col bg-white/95 backdrop-blur-md shadow-md md:hidden px-6 py-6 space-y-4 text-lg text-rose-900">
+    <a href="#leistungen" class="block">Leistungen</a>
+    <a href="#galerie" class="block">Galerie</a>
+    <a href="#kontakt" class="block">Kontakt</a>
+  </div>
+</header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="pt-32 pb-20 bg-rose-50" data-aos="fade-up" data-aos-delay="150">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- Text -->
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold text-rose-900 leading-tight">
+            Schöne Nägel, die deinen Alltag verzaubern
+          </h1>
+
+          <p class="mt-6 text-lg text-slate-700">
+            Professionelle Nagelmodellage, Maniküre und kreative Designs – mit Liebe zum Detail.
+          </p>
+
+          <!-- Neuer edler Button -->
+          <a href="#kontakt"
+            class="inline-block mt-8 bg-gradient-to-r from-rose-500 to-rose-600 text-white px-8 py-3 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.03] active:scale-[0.98] transition-all duration-300">
+            Termin vereinbaren
+          </a>
+        </div>
+
+       <!-- Bild -->
+        <div data-aos="zoom-in" data-aos-delay="250">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80"
+               alt="Nagelstudio Beispiel"
+               class="rounded-xl shadow-lg">
+        </div>
+      </div>
+    </section>
+
+<section id="leistungen" class="py-24 bg-white" data-aos="zoom-in" data-aos-delay="150">
+  <div class="max-w-6xl mx-auto px-6" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- Titel -->
+    <h2 class="text-3xl md:text-4xl font-bold text-rose-900 text-center">
+      Unsere Leistungen
+    </h2>
+    <p class="text-rose-700/80 text-center mt-3 max-w-2xl mx-auto">
+      Hochwertige Behandlungen für gepflegte, schöne Nägel und ein rundum gutes Gefühl.
+    </p>
+
+    <!-- Grid -->
+    <div class="grid md:grid-cols-3 gap-12 mt-16">
+
+      <!-- Karte 1 -->
+      <div class="text-center bg-rose-50/60 backdrop-blur-sm p-10 rounded-2xl shadow-sm hover:shadow-md transition">
+        <div class="mx-auto w-16 h-16 bg-rose-100 text-rose-700 rounded-full flex items-center justify-center text-3xl">
+          💅
+        </div>
+        <h3 class="text-xl font-semibold text-rose-900 mt-6">Maniküre</h3>
+        <p class="text-rose-700/80 mt-3">
+          Sanfte Pflege, perfekte Form und ein natürlich schönes Ergebnis.
+        </p>
+      </div>
+
+      <!-- Karte 2 -->
+      <div class="text-center bg-rose-50/60 backdrop-blur-sm p-10 rounded-2xl shadow-sm hover:shadow-md transition">
+        <div class="mx-auto w-16 h-16 bg-rose-100 text-rose-700 rounded-full flex items-center justify-center text-3xl">
+          ✨
+        </div>
+        <h3 class="text-xl font-semibold text-rose-900 mt-6">Nagelmodellage</h3>
+        <p class="text-rose-700/80 mt-3">
+          Stabile, elegante Nägel mit Gel oder Acryl – ganz nach deinem Stil.
+        </p>
+      </div>
+
+      <!-- Karte 3 -->
+      <div class="text-center bg-rose-50/60 backdrop-blur-sm p-10 rounded-2xl shadow-sm hover:shadow-md transition">
+        <div class="mx-auto w-16 h-16 bg-rose-100 text-rose-700 rounded-full flex items-center justify-center text-3xl">
+          🎨
+        </div>
+        <h3 class="text-xl font-semibold text-rose-900 mt-6">Nail Art</h3>
+        <p class="text-rose-700/80 mt-3">
+          Von schlicht bis extravagant – Designs, die deine Persönlichkeit zeigen.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="galerie" class="py-24 bg-rose-50/40" data-aos="zoom-in" data-aos-delay="150" class="columns-1 ..." data-aos="fade-up" data-aos-delay="200">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Titel -->
+    <h2 class="text-3xl md:text-4xl font-bold text-rose-900 text-center">
+      Galerie
+    </h2>
+    <p class="text-rose-700/80 text-center mt-3 max-w-2xl mx-auto">
+      Eine Auswahl unserer schönsten Nageldesigns.
+    </p>
+
+    <!-- Masonry Grid -->
+    <div class="mt-16 columns-1 sm:columns-2 md:columns-3 gap-6 space-y-6">
+
+      <!-- Bild 1 -->
+      <img src="images/gallery_1.png"
+           class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform"
+           alt="Nageldesign">
+
+      <!-- Bild 2 -->
+      <img src="images/gallery_2.png"
+           class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform"
+           alt="Nageldesign">
+
+      <!-- Bild 3 -->
+      <img src="images/gallery_3.png"
+           class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform"
+           alt="Nageldesign">
+
+      <!-- Bild 4 -->
+      <img src="images/gallery_4.png"
+           class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform"
+           alt="Nageldesign">
+
+      <!-- Bild 5 -->
+      <img src="images/gallery_5.png"
+           class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform"
+           alt="Nageldesign">
+
+      <!-- Bild 6 -->
+      <img src="images/gallery_6.png"
+           class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform"
+           alt="Nageldesign">
+
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- ÜBER MICH -->
+    <section id="ueber-mich" class="py-20 bg-white" data-aos="zoom-in" data-aos-delay="150">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-rose-900">
+            Über mich
+          </h2>
+
+          <p class="mt-6 text-slate-700 leading-relaxed">
+            Mein Name ist M., und ich führe mein Nagelstudio mit Leidenschaft und Liebe zum Detail.
+            Seit vielen Jahren arbeite ich professionell im Bereich Nageldesign und lege großen Wert
+            auf Qualität, Hygiene und individuelle Beratung.
+          </p>
+
+          <p class="mt-4 text-slate-700 leading-relaxed">
+            Egal ob natürlich, elegant oder kreativ – gemeinsam finden wir den perfekten Look für dich.
+          </p>
+        </div>
+
+        <div>
+          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80"
+               class="rounded-xl shadow-lg"
+               alt="Studio Beispiel">
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="py-20 bg-rose-50" data-aos="zoom-in" data-aos-delay="150">
+      <div class="max-w-6xl mx-auto px-6">
+
+        <h2 class="text-3xl md:text-4xl font-bold text-rose-900 text-center">
+          Kontakt & Öffnungszeiten
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12 mt-12">
+
+          <div>
+            <h3 class="text-xl font-semibold text-rose-800">Kontakt</h3>
+
+            <p class="mt-4 text-slate-700">
+              📞 Telefon: <strong>01234 / 567890</strong><br>
+              📍 Adresse: Musterstraße 12, 12345 Musterstadt
+            </p>
+
+            <a href="tel:01234567890"
+               class="inline-block mt-8 bg-rose-600 text-white px-6 py-3 rounded-lg shadow hover:bg-rose-700 transition">
+              Jetzt anrufen
+            </a>
+          </div>
+
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.583857560743!2d10.786203976587547!3d49.28428207139314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4798b36955a15997%3A0xb2608a2db0f7fe03!2sM-Nagelbeauty%20Nagelstudio%20und%20kosmetische%20Fu%C3%9Fpflege!5e0!3m2!1sde!2sde!4v1773579361532!5m2!1sde!2sde"
+              width="100%"
+              height="350"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="rounded-xl shadow">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+<footer class="bg-rose-100/40 border-t border-rose-200 mt-24" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-12">
+
+    <!-- Logo + Kurztext -->
+    <div>
+      <img src="images/logo.png" alt="Logo" class="h-16 mb-4">
+      <p class="text-rose-700/80">
+        Professionelle Nagelpflege und stilvolle Designs – mit Liebe zum Detail.
+      </p>
+    </div>
+
+    <!-- Kontakt -->
+    <div>
+      <h3 class="text-xl font-semibold text-rose-900 mb-4">Kontakt</h3>
+      <p class="text-rose-700/80">Reuther Str. 1b</p>
+      <p class="text-rose-700/80">91564 Neuendettelsau</p>
+
+      <p class="text-rose-700/80 mt-4">Telefon: <span class="font-medium">+49 123 456789</span></p>
+      <p class="text-rose-700/80">E-Mail: <span class="font-medium">info@nagelstudio.de</span></p>
+    </div>
+
+    <!-- Social Media -->
+    <div>
+      <h3 class="text-xl font-semibold text-rose-900 mb-4">Folge uns</h3>
+      <div class="flex gap-4 text-3xl text-rose-700">
+        <a href="#" class="hover:text-rose-900 transition">📸</a>
+        <a href="#" class="hover:text-rose-900 transition">💬</a>
+        <a href="#" class="hover:text-rose-900 transition">🌐</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center py-6 text-rose-700/70 text-sm border-t border-rose-200">
+    © 2026 M. Nagelbeauty – Alle Rechte vorbehalten.
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 800,
+  easing: 'ease-out-quart',
+  once: false,
+  mirror: true   // <--- aktiviert Animationen beim Hochscrollen
+});
+</script>
+
+</body>
+</html>
